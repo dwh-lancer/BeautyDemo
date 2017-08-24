@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">美妆触屏版</string>
+    <string name="option1">检测结果</string>
+    <string name="option2">额头有皱纹</string>
+    <string name="option3">额头无皱纹</string>
+    <string name="option4">无图片</string>
+    <string name="option5">无数据</string>
+    <string name="btntext">检测皱纹</string>
+    <string name="img">一张图片</string>
+</resources>

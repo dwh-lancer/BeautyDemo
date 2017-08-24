@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:background="@mipmap/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--左侧皱纹-->
+        <ImageView
+            android:id="@+id/img_wrinkle1"
+            android:layout_gravity="top"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="80dp"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:src="@mipmap/man1"/>
+        <ImageView
+
+            android:id="@+id/img_wrinkle2"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:src="@mipmap/man2"/>
+        <ImageView
+
+            android:id="@+id/img_wrinkle3"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="80dp"
+            android:layout_marginLeft="50dp"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:src="@mipmap/man3"/>
+
+        <!--中间头像-->
+        <ImageView
+            android:id="@+id/img_face"
+            android:layout_gravity="center"
+            android:layout_marginRight="75dp"
+            android:src="@mipmap/man"
+            android:layout_width="400dp"
+            android:layout_height="match_parent" />
+
+        <!--右侧头像-->
+        <ImageView
+
+            android:id="@+id/img_wrinkle4"
+            android:layout_gravity="end"
+            android:layout_marginRight="150dp"
+            android:layout_marginTop="50dp"
+            android:layout_width="180dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/man4" />
+
+        <ImageView
+
+            android:id="@+id/img_wrinkle5"
+            android:layout_gravity="end"
+            android:layout_marginRight="160dp"
+            android:layout_marginTop="220dp"
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/man5" />
+        <ImageView
+
+            android:id="@+id/img_wrinkle6"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="150dp"
+            android:layout_marginBottom="180dp"
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/man6" />
+        <ImageView
+
+            android:id="@+id/img_wrinkle7"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="160dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="180dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/man3" />
+
+        <!--痘痘左侧、右侧-->
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/layout_ddleft"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_gravity="top"
+            android:layout_width="200dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="粉刺痘痘现状"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textColor="@color/black"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"></View>
+            <TextView
+                android:text="根据痘痘位置情况可以判断，您的内分泌最近可能有些问题，早睡，注意按时吃饭，部分痘痘暂时不能自行处理。"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/bar_color"
+                android:textSize="20sp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"></View>
+            <TextView
+            android:text="面部健康"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="@color/black"/>
+
+            <TextView
+                android:text="50%"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/bar_color"
+                android:textSize="60sp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"></View>
+            <TextView
+                android:text="面部油性"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:text="78%"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/bar_color"
+                android:textSize="60sp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"></View>
+            <TextView
+                android:text="可清理"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:text="60%"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/bar_color"
+                android:textSize="60sp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/layout_ddright"
+            android:orientation="vertical"
+            android:layout_marginLeft="300dp"
+            android:layout_marginBottom="50dp"
+            android:layout_gravity="center|bottom"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:drawableLeft="@mipmap/dd1"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  未成熟的痘痘"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"></View>
+            <TextView
+                android:drawableLeft="@mipmap/dd2"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  成熟的痘痘"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"></View>
+            <TextView
+                android:drawableLeft="@mipmap/dd3"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  粉刺区域"/>
+
+        </LinearLayout>
+
+
+
+        <!--眉毛-->
+        <ScrollView
+            android:visibility="gone"
+            android:id="@+id/layout_scroll"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="160dp"
+            android:layout_width="120dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/img_eyebrow1"
+                    android:src="@mipmap/eye1"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"></View>
+                <ImageView
+                    android:id="@+id/img_eyebrow2"
+                    android:src="@mipmap/eye1"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"></View>
+                <ImageView
+                    android:id="@+id/img_eyebrow3"
+                    android:src="@mipmap/eye1"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"></View>
+                <ImageView
+                    android:id="@+id/img_eyebrow4"
+                    android:src="@mipmap/eye1"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"></View>
+                <ImageView
+                    android:id="@+id/img_eyebrow5"
+                    android:src="@mipmap/eye1"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"></View>
+                <ImageView
+                    android:id="@+id/img_eyebrow6"
+                    android:src="@mipmap/eye1"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"></View>
+                <ImageView
+                    android:id="@+id/img_eyebrow7"
+                    android:src="@mipmap/eye1"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"></View>
+                <ImageView
+                    android:id="@+id/img_eyebrow8"
+                    android:src="@mipmap/eye1"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+            </LinearLayout>
+
+        </ScrollView>
+        <!--眉毛效果-->
+        <com.neu.beautydemo.view.MyRelativeLayout
+            android:id="@+id/layout_myRelative"
+            android:layout_gravity="center"
+            android:layout_marginRight="75dp"
+            android:layout_width="400dp"
+            android:layout_height="match_parent">
+
+        </com.neu.beautydemo.view.MyRelativeLayout>
+        <!--划线-->
+        <com.neu.beautydemo.view.LineView
+            android:visibility="gone"
+            android:id="@+id/line_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <com.neu.beautydemo.view.LineView
+            android:visibility="gone"
+            android:id="@+id/line_view1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_guide"
+        android:orientation="vertical"
+        android:layout_width="150dp"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+    </LinearLayout>
+</RelativeLayout>

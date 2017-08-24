@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:background="@mipmap/bg"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--左侧的天气、头像、设置等功能-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/layout_set"
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:onClick="onClick"
+            android:id="@+id/btn_login_out"
+            android:text="退出登录"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"></View>
+        <Button
+            android:visibility="gone"
+            android:onClick="onClick"
+            android:id="@+id/btn_takePic"
+            android:text="拍照"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+    <!--人脸的区域-->
+    <RelativeLayout
+        android:id="@+id/layout_main"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+
+    <!--右侧的菜单导航-->
+    <LinearLayout
+        android:id="@+id/layout_guide"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+    </LinearLayout>
+</LinearLayout>

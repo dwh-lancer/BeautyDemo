@@ -1,0 +1,29 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+    <TextView
+        android:visibility="gone"
+        android:gravity="top|left"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:background="@mipmap/menu1"
+        android:id="@+id/btn_select"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:layout_height="150dp"
+        android:text="美图"/>
+
+    <ExpandableListView
+        android:layout_gravity="center"
+        android:id="@+id/expandablelistview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null">
+    </ExpandableListView>
+
+</LinearLayout>
+
